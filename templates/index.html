@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauges de Temperatura y Humedad</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .gauge-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        canvas {
+            width: 200px !important;
+            height: 200px !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Indicadores de Temperatura y Humedad</h1>
+    <div class="gauge-container">
+        <canvas id="temperatureGauge"></canvas>
+        <canvas id="humidityGauge"></canvas>
+    </div>
+    <script src="/static/js/gauges.js"></script>
+</body>
+</html>
+
